@@ -9,3 +9,8 @@ pacients = [
 {"edat": 48, "gsang": "AB", "rh": "+", "genere": "Masculí"},
 ]
 
+
+filtrats = [pacient for pacient in pacients if pacient["edat"] < 35 and pacient["gsang"] in ["A", "O"]]
+
+for pacient in filtrats:
+    print(pacient)
